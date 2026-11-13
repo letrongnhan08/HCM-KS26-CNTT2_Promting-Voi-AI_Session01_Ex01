@@ -1,0 +1,8 @@
+Bài 1: Hiểu đúng bản chất "Máy dự đoán từ tiếp theo" (Next Token Prediction) của LLM
+Phần 1 (Bóc tách nhận thức sai):
+- Sai lầm về cơ chế hoạt động: LLM không sở hữu một module tính toán số học logic như máy tính bỏ túi, mà LLM hoạt động theo Next Token Prediction, nó học dựa trên phân phối xác suất thống kê học được từ giai đoạn Pre-training, và khi gặp các phép tính thì LLM không tính toán mà đoán từ nào có khả năng có xác suất xuất hiện cao nhất dựa trên dữ liệu đã học
+- Nam lầm tưởng LLM là một máy tính bỏ túi (Calculator) có khả năng thực thi thuật toán số học logic, trong khi LLM xử lý các con số dưới dạng văn bản (text)
+
+Phần 2: Đề xuất Prompt chuẩn giúp khắc phục lỗi số học:
+Giải pháp: kích hoạt sử dụng python
+Prompt cho AI: Sử dụng Python, để tính toán phép tính sau: $15.480 + 28.750$. Hãy viết code, chạy nó và đưa ra kết quả
